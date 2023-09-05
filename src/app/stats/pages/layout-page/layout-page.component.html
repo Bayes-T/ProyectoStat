@@ -1,0 +1,30 @@
+<mat-toolbar id="toolbar" color="primary">
+    <button (click)="sidenav.toggle()" mat-icon-button class="example-icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+        <span>Grandes estadísticos</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button> <mat-icon>favorite</mat-icon> </button>
+        <button mat-icon-button> <mat-icon>share</mat-icon> </button>
+    
+</mat-toolbar>
+
+<mat-sidenav-container>
+<mat-sidenav #sidenav mode="side" color="primary">
+<mat-nav-list>
+    <mat-list-item *ngFor="let link of Links" routerLink="{{link.url}}">
+        <div class="center-item">
+        <mat-icon>{{link.icon}}</mat-icon>
+        <span id="linkName">
+            {{link.name}}
+        </span>
+    </div>
+     </mat-list-item>
+</mat-nav-list>
+</mat-sidenav>
+<mat-sidenav-content>
+    <router-outlet></router-outlet>
+</mat-sidenav-content>    
+</mat-sidenav-container>
+
+
