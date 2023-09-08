@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'stats'
+    redirectTo: 'error404'
   }
 ];
 

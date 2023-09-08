@@ -1,1 +1,99 @@
-<p>register works!</p>
+<div class="background">
+
+  <mat-toolbar id="toolbar" color="primary">
+    <button routerLink="/stats/stathome" mat-icon-button class="example-icon">
+        <mat-icon>home</mat-icon>
+    </button>
+        <span>Grandes estadísticos</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button> <mat-icon>favorite</mat-icon> </button>
+        <button mat-icon-button> <mat-icon>share</mat-icon> </button>
+    
+</mat-toolbar>
+
+    <div class="d-flex align-items-center justify-content-center vh-100">
+    <div class="container-custom">
+
+      <h1 class="fs-2 text-center">Registrarme</h1>
+        <form [formGroup]="registerForm">
+            <div class="row">
+              <div class="col">
+                <input formControlName="name" type="text" class="form-control" placeholder="Nombre">
+                <span *ngIf="isValidField('name')" class="form-text text-danger">
+                  {{getFieldError('name')}}
+               </span>
+              </div>
+              <div class="col">
+                <input formControlName="lastName" type="text" class="form-control" placeholder="Apellido">
+                <span *ngIf="isValidField('lastName')" class="form-text text-danger">
+                  {{getFieldError('lastName')}}
+               </span>
+              </div>
+            </div> <!--fin row-->
+
+            <div class="row">
+              <div class="d-flex align-items-center col-3">
+                <label class="fs-3" id="inst">Institución: </label>
+          </div>
+            <div class="col-9">
+                <input formControlName="institution" type="text" class="form-control" placeholder="Universidad de los Andes">
+                <span *ngIf="isValidField('institution')" class="form-text text-danger">
+                  {{getFieldError('institution')}}
+               </span>
+            </div>
+            </div> <!--fin row-->
+
+            <div class="row">
+              <div class="col">
+                <input formControlName="email" type="email"  class="form-control" placeholder="Correo electrónico">
+                <span *ngIf="isValidField('email')" class="form-text text-danger">
+                  {{getFieldError('email')}}
+               </span>
+              </div>
+
+              <div class="col">
+                <select formControlName="rol" id="inputState" class="form-control">
+                  <option selected name="rol">Tu rol académico</option>
+                  <option name="rol">Estudiante pre-universitario</option>
+                  <option name="rol">Estudiante pregrado</option>
+                  <option name="rol">Estudiante posgrado</option>
+                  <option name="rol">Docente</option>
+                </select>
+                <span *ngIf="isValidField('rol')" class="form-text text-danger">
+                  {{getFieldError('rol')}}
+               </span>
+              </div>
+
+            </div> <!--fin row-->
+
+            <div class="row">
+              
+              <div class="col">
+                <input formControlName="password1" type="password"  class="form-control" placeholder="Contraseña">
+                <span *ngIf="isValidField('password1')" class="form-text text-danger">
+                  {{getFieldError('password1')}}
+               </span>
+              </div>
+
+
+              <div class="col">
+                <input formControlName="password2" type="password"  class="form-control" placeholder="Repetir contraseña">
+                <span *ngIf="isValidField('password2')" class="form-text text-danger">
+                  {{getFieldError('password2')}}
+               </span>
+              </div>
+
+            </div> <!--fin del row-->
+
+            <div class="row">
+              <div class="col-6 d-inline-block">
+            <button (click)="onSave()" class="btn btn-primary mt-2 w-100">Registrarme</button>
+          </div>
+          <div class="col-6 d-inline-block">
+            <button (click)="toLogin()" class="btn btn-primary mt-2 w-100">¿Ya estás registrado?</button>
+          </div>
+          </div>
+          </form>
+    </div> <!--fin del container-->
+</div> <!-- fin del flex del container-->
+</div>
