@@ -1,0 +1,17 @@
+<mat-card class="infodetail mt-4">
+    <mat-card-header>
+      <mat-card-title>Información sobre {{stat?.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <h2>Su campo principal de trabajo fue {{stat?.maininterest}}</h2>
+      <p>También trabajó en los campos de {{stat?.topics | topics}}</p>
+
+      <mat-divider></mat-divider>
+
+      <p class="mt-2">Aunque trabajó en diversas instuticiones, la mayor parte de su carrera la desarrolló en la <span id="institution">{{stat?.institution}}</span></p>
+
+      <p>Es originario de <span class="negrita">{{stat?.bithplace}}</span></p>
+
+      <div class="mapa" #map></div>
+    </mat-card-content>
+  </mat-card>

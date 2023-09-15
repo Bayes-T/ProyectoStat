@@ -1,1 +1,9 @@
-<p>home works!</p>
+<!-- <app-statcard [stat]="stat"></app-statcard> -->
+
+<div class="grid container">
+    <div class="row">
+        <div *ngFor="let stat of stats" class="col-4 mt-4">
+            <app-statcard [stat]="stat"></app-statcard>   
+        </div>
+    </div>
+</div> <!-- grid Envuelve todo-->

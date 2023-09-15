@@ -1,4 +1,36 @@
-<div class="d-flex">
-<label>Nombre</label>
-<input type="text">
-</div>
+<div class="background">
+
+    <mat-toolbar id="toolbar" color="primary">
+        <button routerLink="/stats/stathome" mat-icon-button class="example-icon">
+            <mat-icon>home</mat-icon>
+        </button>
+            <span>Grandes estadísticos</span>
+            <span class="example-spacer"></span>
+            <button mat-icon-button> <mat-icon>favorite</mat-icon> </button>
+            <button mat-icon-button> <mat-icon>share</mat-icon> </button>
+        
+    </mat-toolbar>
+
+<div class="d-flex align-items-center justify-content-center vh-100">
+    <div class="container-custom w-50">
+<form [formGroup]="loginForm">
+    <div class="form-group">
+      <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email">
+      <span *ngIf="isValidField('email')" class="form-text text-danger">  
+        {{getFieldError('email')}}  
+        </span>
+    </div>
+    <div class="form-group mt-4">
+      <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresa tu contraseña">
+      <span *ngIf="isValidField('password')" class="form-text text-danger">  
+        {{getFieldError('password')}}  
+        </span>
+    </div>
+    <div class="d-flex justify-content-center">
+    <button (click)="onSave()" type="submit" class="btn btn-primary mt-4 w-50">Ingresar</button>
+    </div>
+  </form>
+</div> <!-- Fin del container-->
+</div> <!-- Fin del div flex-->
+
+</div> <!--Fin del background-->

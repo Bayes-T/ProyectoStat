@@ -15,7 +15,7 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'statdetail',
+        path: 'statdetail/:id',
         component: StatdetailComponent
       },
       {

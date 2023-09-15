@@ -1,189 +1,212 @@
 {
-    "statisticians": [
-        {
-          "id": "1",
-          "name": "Thomas Bayes",
-          "bithplace": "Londres",
-          "institution": "Universidad de Edimburgo",
-          "topics": ["teología", "estadística bayesiana"],
-          "maininterest": "Estadística Bayesiana"
-        },
-            {
-          "id": "2",
-          "name": "David Blackwell",
-          "bithplace": "Centralia, Illinois",
-          "institution": "Universidad de Berkeley",
-          "topics": ["teoría de juegos", "estadística bayesiana", "probabilidad"],
-          "maininterest": "Teoría de juegos"
-        },
-         {
-          "id": "3",
-          "name": "George Box",
-          "bithplace": "Gravesend, Kent",
-          "institution": "Universidad de Princeton",
-          "topics": ["control de calidad", "series temporales", "estadística bayesiana"],
-          "maininterest": "Optimización"
-        },
-           {
-          "id": "4",
-          "name": "David Cox",
-          "bithplace": "Birmingham",
-          "institution": "Universidad de Cambridge",
-          "topics": ["regresión estadística", "estadística general", "procesos estocásticos"],
-          "maininterest": "Regresión estadística"
-        },
-        {
-          "id": "5",
-          "name": "George Dantzig",
-          "bithplace": "Portland, Oregon",
-          "institution": "Universidad de Stanford ",
-          "topics": ["física", "optimización"],
-          "maininterest": "Optimización"
-        },
-           {
-          "id": "6",
-          "name": "William Deming",
-          "bithplace": "Sioux City, Iowa",
-          "institution": "Universidad de Yale",
-          "topics": ["control de calidad", "ingeniería"],
-          "maininterest": "Optimización"
-        },
-           {
-          "id": "7",
-          "name": "Bradley Efron",
-          "bithplace": "Saint Paul, Minesota",
-          "institution": "Universidad de Stanford",
-          "topics": ["estadística general, muestreo"],
-          "maininterest": "Estadística General"
-        },
-           {
-          "id": "8",
-          "name": "Ronald Fisher",
-          "bithplace": "East Finchley, Reino Unido",
-          "institution": "Universidad de Cambridge",
-          "topics": ["estadística general", "biología"],
-          "maininterest": "Estadística General"
-        },
-         {
-          "id": "9",
-          "name": "Francis Galton",
-          "bithplace": "Sparkbrook, Reino Unido",
-          "institution": "Trinity College",
-          "topics": ["biología", "probabilidad", "psicología"],
-          "maininterest": "Estadística general"
-        },
+  "statisticians": [
+      {
+        "id": "1",
+        "name": "Thomas Bayes",
+        "bithplace": "Londres",
+        "institution": "Universidad de Edimburgo",
+        "topics": ["teología", "estadística bayesiana"],
+        "maininterest": "Estadística Bayesiana",
+        "place": [-0.11, 51.50]
+      },
           {
-          "id": "10",
-          "name": "Carl Gauss",
-          "bithplace": "Braunschweig",
-          "institution": "Universidad de Gotinga",
-          "topics": ["teoría de numeros", "magnetismo", "física"],
-          "maininterest": "Matemáticas Generales"
-        },      
+        "id": "2",
+        "name": "David Blackwell",
+        "bithplace": "Centralia, Illinois",
+        "institution": "Universidad de Berkeley",
+        "topics": ["teoría de juegos", "estadística bayesiana", "probabilidad"],
+        "maininterest": "Teoría de juegos",
+        "place": [-89.14, 38.53]
+      },
+       {
+        "id": "3",
+        "name": "George Box",
+        "bithplace": "Gravesend, Kent",
+        "institution": "Universidad de Princeton",
+        "topics": ["control de calidad", "series temporales", "estadística bayesiana"],
+        "maininterest": "Optimización",
+        "place": [0.37, 51.44]
+      },
+         {
+        "id": "4",
+        "name": "David Cox",
+        "bithplace": "Birmingham",
+        "institution": "Universidad de Cambridge",
+        "topics": ["regresión estadística", "estadística general", "procesos estocásticos"],
+        "maininterest": "Regresión estadística",
+        "place": [-1.89, 52.48]
+      },
+      {
+        "id": "5",
+        "name": "George Dantzig",
+        "bithplace": "Portland, Oregon",
+        "institution": "Universidad de Stanford ",
+        "topics": ["física", "optimización"],
+        "maininterest": "Optimización",
+        "place": [122.67, 45.52]
+      },
+         {
+        "id": "6",
+        "name": "William Deming",
+        "bithplace": "Sioux City, Iowa",
+        "institution": "Universidad de Yale",
+        "topics": ["control de calidad", "ingeniería"],
+        "maininterest": "Optimización",
+        "place": [-96.40, 42.49]
+      },
+         {
+        "id": "7",
+        "name": "Bradley Efron",
+        "bithplace": "Saint Paul, Minesota",
+        "institution": "Universidad de Stanford",
+        "topics": ["estadística general, muestreo"],
+        "maininterest": "Estadística General",
+        "place": [-93.09, 44.95]
+      },
+         {
+        "id": "8",
+        "name": "Ronald Fisher",
+        "bithplace": "East Finchley, Reino Unido",
+        "institution": "Universidad de Cambridge",
+        "topics": ["estadística general", "biología"],
+        "maininterest": "Estadística General",
+        "place": [-0.16, 51.58]
+      },
+       {
+        "id": "9",
+        "name": "Francis Galton",
+        "bithplace": "Sparkbrook, Reino Unido",
+        "institution": "Trinity College",
+        "topics": ["biología", "probabilidad", "psicología"],
+        "maininterest": "Estadística general",
+        "place": [-1.83, 52.48]
+      },
         {
-          "id": "11",
-          "name": "William Gosset",
-          "bithplace": "Canterbury, Reino Unido",
-          "institution": "Winchester College New College",
-          "topics": ["estadística general"],
-          "maininterest": "Estadística General"
-        },
-            {
-          "id": "12",
-          "name": "Edwin Jaynes",
-          "bithplace": "Waterloo, Estados Unidos",
-          "institution": "Universidad de Princeton",
-          "topics": ["física", "probabilidad", "estadística bayesiana"],
-          "maininterest": "Estadística Bayesiana"
-        },       
-        {
-          "id": "13",
-          "name": "Andre Kolmogorov",
-          "bithplace": "Tambov, Rusia",
-          "institution": "Universidad Estatal de Moscú",
-          "topics": ["probabilidad", "física", "computación"],
-          "maininterest": "Matemática General"
-        },     
-        {
-          "id": "14",
-          "name": "Andre Markov",
-          "bithplace": "Riazán, Rusia",
-          "institution": "Universidad Estatal de San Petersburgo",
-          "topics": ["probabilidad", "teoría de números"],
-          "maininterest": "Matemática General"
-        },       
-        {
-          "id": "15",
-          "name": "Jerzy Neyman",
-          "bithplace": "Bender, Rusia",
-          "institution": "Universidad de California en Berkeley",
-          "topics": ["matemática general", "estadística general"],
-          "maininterest": "Estadística General"
-        },     
-        {
-          "id": "16",
-          "name": "Florence Nightingale",
-          "bithplace": "Florencia, Italia",
-          "institution": "Ejército Británico",
-          "topics": ["enfermería", "estadística general", "epidemiología"],
-          "maininterest": "Estadística General"
-        },     
-        {
-          "id": "17",
-          "name": "Blaise Pascal",
-          "bithplace": "Clermont-Ferrand, Francia",
-          "institution": "Gobierno de Francia",
-          "topics": ["teología", "matemática general", "probabilidad", "filosofía"],
-          "maininterest": "Matemática General"
-        },    
-        {
-          "id": "18",
-          "name": "Karl Pearson",
-          "bithplace": "Londres",
-          "institution": "University College de Londres",
-          "topics": ["matemática general", "filosofía", "estadística general", "psicología"],
-          "maininterest": "Estadística General"
-        },    
-        {
-          "id": "19",
-          "name": "Adolphe Quetelet",
-          "bithplace": "Gante, Bélgica",
-          "institution": "Universidad de Gante",
-          "topics": ["astronomía", "matemática general", "sociología", "estadística general"],
-          "maininterest": "Estadística General"
-        },      
-        {
-          "id": "20",
-          "name": "Walter Shewhart",
-          "bithplace": "New Canton, Estados Unidos",
-          "institution": "Bell Labs",
-          "topics": ["física", "ingeniería", "optimización"],
-          "maininterest": "Optimización"
-        },       
-        {
-          "id": "21",
-          "name": "Nate Silver",
-          "bithplace": "East Lansing, Estados Unidos",
-          "institution": "ABC News",
-          "topics": ["béisbol", "estadística general", "probabilidad"],
-          "maininterest": "Estadística General"
-        },
-            {
-          "id": "22",
-          "name": "Abraham Wald",
-          "bithplace": "Kolozsvár, Hungría",
-          "institution": "Universidad de Columbia",
-          "topics": ["matemática general", "estadística general", "probabilidad"],
-          "maininterest": "Estadística General"
-        },
-            {
-          "id": "23",
-          "name": "Frank Yates",
-          "bithplace": "Manchester, Reino Unido",
-          "institution": "Rothamsted Research",
-          "topics": ["matemática general", "estadística general", "computación", "encuestas"],
-          "maininterest": "Estadística General"
-        }
-    
-        ]
-        }
+        "id": "10",
+        "name": "Carl Gauss",
+        "bithplace": "Braunschweig",
+        "institution": "Universidad de Gotinga",
+        "topics": ["teoría de numeros", "magnetismo", "física"],
+        "maininterest": "Matemáticas Generales",
+        "place": [10.51, 52.26]
+      },      
+      {
+        "id": "11",
+        "name": "William Gosset",
+        "bithplace": "Canterbury, Reino Unido",
+        "institution": "Winchester College New College",
+        "topics": ["estadística general"],
+        "maininterest": "Estadística General",
+        "place": [1.08, 51.27]
+      },
+          {
+        "id": "12",
+        "name": "Edwin Jaynes",
+        "bithplace": "Waterloo, Estados Unidos",
+        "institution": "Universidad de Princeton",
+        "topics": ["física", "probabilidad", "estadística bayesiana"],
+        "maininterest": "Estadística Bayesiana",
+        "place": [-92.35, 42.49]
+      },       
+      {
+        "id": "13",
+        "name": "Andre Kolmogorov",
+        "bithplace": "Tambov, Rusia",
+        "institution": "Universidad Estatal de Moscú",
+        "topics": ["probabilidad", "física", "computación"],
+        "maininterest": "Matemática General",
+        "place": [41.44, 52.72]
+      },     
+      {
+        "id": "14",
+        "name": "Andre Markov",
+        "bithplace": "Riazán, Rusia",
+        "institution": "Universidad Estatal de San Petersburgo",
+        "topics": ["probabilidad", "teoría de números"],
+        "maininterest": "Matemática General",
+        "place": [39.71, 54.60]
+      },       
+      {
+        "id": "15",
+        "name": "Jerzy Neyman",
+        "bithplace": "Bender, Rusia",
+        "institution": "Universidad de California en Berkeley",
+        "topics": ["matemática general", "estadística general"],
+        "maininterest": "Estadística General",
+        "place": [29.47, 46.83]
+      },     
+      {
+        "id": "16",
+        "name": "Florence Nightingale",
+        "bithplace": "Florencia, Italia",
+        "institution": "Ejército Británico",
+        "topics": ["enfermería", "estadística general", "epidemiología"],
+        "maininterest": "Estadística General",
+        "place": [11.25, 43.76]
+      },     
+      {
+        "id": "17",
+        "name": "Blaise Pascal",
+        "bithplace": "Clermont-Ferrand, Francia",
+        "institution": "Gobierno de Francia",
+        "topics": ["teología", "matemática general", "probabilidad", "filosofía"],
+        "maininterest": "Matemática General",
+        "place": [3.08, 45.78]
+      },    
+      {
+        "id": "18",
+        "name": "Karl Pearson",
+        "bithplace": "Londres",
+        "institution": "University College de Londres",
+        "topics": ["matemática general", "filosofía", "estadística general", "psicología"],
+        "maininterest": "Estadística General",
+        "place": [-0.11, 51.50]
+      },    
+      {
+        "id": "19",
+        "name": "Adolphe Quetelet",
+        "bithplace": "Gante, Bélgica",
+        "institution": "Universidad de Gante",
+        "topics": ["astronomía", "matemática general", "sociología", "estadística general"],
+        "maininterest": "Estadística General",
+        "place": [3.73, 51.04]
+      },      
+      {
+        "id": "20",
+        "name": "Walter Shewhart",
+        "bithplace": "New Canton, Estados Unidos",
+        "institution": "Bell Labs",
+        "topics": ["física", "ingeniería", "optimización"],
+        "maininterest": "Optimización",
+        "place": [-78.30, 37.70]
+      },       
+      {
+        "id": "21",
+        "name": "Nate Silver",
+        "bithplace": "East Lansing, Estados Unidos",
+        "institution": "ABC News",
+        "topics": ["béisbol", "estadística general", "probabilidad"],
+        "maininterest": "Estadística General",
+        "place": [42.73, -84.48]
+      },
+          {
+        "id": "22",
+        "name": "Abraham Wald",
+        "bithplace": "Kolozsvár, Hungría",
+        "institution": "Universidad de Columbia",
+        "topics": ["matemática general", "estadística general", "probabilidad"],
+        "maininterest": "Estadística General",
+        "place": [46.77, 23.59]
+      },
+          {
+        "id": "23",
+        "name": "Frank Yates",
+        "bithplace": "Manchester, Reino Unido",
+        "institution": "Rothamsted Research",
+        "topics": ["matemática general", "estadística general", "computación", "encuestas"],
+        "maininterest": "Estadística General",
+        "place": [53.48, -2.24]
+      }
+  
+      ]
+      }

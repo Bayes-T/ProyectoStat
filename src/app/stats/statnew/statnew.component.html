@@ -1,1 +1,58 @@
-<p>statnew works!</p>
+<div class="container mt-4">
+<form [formGroup]="newStatForm">
+    <div class="grid">
+    <div class="row">
+        <div class="col">
+    <div class="form-group">
+      <label for="name">Nombre: </label>
+      <input formControlName="name" type="text" class="form-control" id="name" placeholder="Thomas Bayes">
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="form-group">
+        <label for="institution">Institución: </label>
+        <input formControlName="institution" type="text" class="form-control" id="institution" placeholder="Universidad de Edimburgo">
+      </div>
+    </div>
+    </div> <!--fin del row-->
+
+    <div class="row">
+        <div class="col">
+      <div class="form-group">
+        <label for="topics">Temas de interés: </label>
+        <input formControlName="topics" type="text" class="form-control" id="topics" placeholder="Teología" name="topics[]">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-group">
+        <label for="maininterest">Interés principal: </label>
+        <input  formControlName="maininterest" type="text" class="form-control" id="maininterest" placeholder="Estadística Bayesiana">
+      </div>
+    </div>
+    </div> <!-- fin del row-->
+
+    <div class="row">
+        <div class="col">
+      <div class="form-group">
+        <label for="bithplace">Lugar de nacimiento: </label>
+        <input formControlName="bithplace" type="text" class="form-control" id="bithplace" placeholder="Londres">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-group">
+        <label for="place">Coordenadas: </label>
+        <input  formControlName="place" type="text" class="form-control" id="place" placeholder="[-0.11,51.5]">
+      </div>
+    </div>
+    </div> <!-- fin del row-->
+
+    <div class="d-flex justify-content-center">
+    <button (click)="onSave()" class="btn btn-primary mt-2 w-75">Crear estadístico</button>
+    </div>
+</div>
+  </form>
+
+</div>

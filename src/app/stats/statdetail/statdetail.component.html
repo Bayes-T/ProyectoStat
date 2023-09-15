@@ -1,1 +1,39 @@
-<p>statdetail works!</p>
+<div class="grid container">
+
+  <div class="row">
+    <div class="col">
+  <ng-template #divLoading >
+<mat-spinner></mat-spinner>
+  </ng-template>
+</div>
+</div>
+
+    <div class="row" *ngIf="stat; else divLoading">
+    <div class="col-6 mt-4">
+<mat-card class="stat-card pb-2">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{stat.name}}</mat-card-title>
+      <mat-card-subtitle>{{stat.institution}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="/assets/mathimg/{{stat!.name | split}}.jpg" onerror="this.src='/assets/mathimg/no-image.png';" alt="Photo">
+    <mat-card-content>
+      <mat-chip highlighted color="primary" class="mt-3 mx-2" *ngFor="let topic of stat?.topics">{{topic}}</mat-chip>
+    </mat-card-content>
+    <mat-card-actions class="mt-4 ">
+
+      <button (click)="openDialog()" class="mx-4" color="primary" mat-raised-button>Editar</button>
+      <button (click)="onDelete()" color="warn" mat-raised-button>Eliminar</button>
+
+    </mat-card-actions>
+  </mat-card> 
+    </div>
+
+
+  <div class="col-6">
+    <app-infodetail></app-infodetail>
+  </div>
+
+</div> <!--fin del row-->
+</div> <!-- fin del grid-->
+
