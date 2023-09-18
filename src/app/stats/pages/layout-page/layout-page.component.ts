@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { Link, } from '../../interfaces/stats.interfaces';
+import {MatSnackBar, MatSnackBarRef} from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
+
 
 @Component({
   templateUrl: './layout-page.component.html',
@@ -40,8 +43,35 @@ background-color: #3f51b5;
   `
   ]
 })
-export class LayoutPageComponent {
+export class LayoutPageComponent implements OnInit{
 
+  constructor(private snackBar: MatSnackBar, private router: Router){}
+  ngOnInit(): void {
+    
+  }
+
+  // openSnackBar() {
+  //   this.snackBar.open("¿Estás seguro?", "Estoy seguro");
+  // }
+
+  
+  mostrar(){
+
+
+  const miSnackBar = this.snackBar.open("¿Estás seguro de salir de la página?", 'Estoy seguro');
+
+    miSnackBar.onAction()
+    .subscribe(resp => {
+      this.router.navigateByUrl('/stats/stathome')
+      console.log("Presionaste la acción!");
+    });
+
+    miSnackBar.afterDismissed().subscribe(() => {
+      console.log('The snackbar was dismissed');
+    });
+  }
+
+  
   public Links: Link[] = [
     {name: 'Ingresar',
     url: '/auth/login',

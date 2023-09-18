@@ -364,9 +364,11 @@
     },
     {
       "id": "dChDwgj",
-      "name": "Thomas Bayes2",
+      "name": "Thomas Bayes22",
       "institution": "Universidad de Edimburgo2",
-      "topics": "Probabilidad",
+      "topics": [
+        "Probabilidad"
+      ],
       "maininterest": "Estadística bayesiana",
       "bithplace": "Londres",
       "place": "[55,-12]"

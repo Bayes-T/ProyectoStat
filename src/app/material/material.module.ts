@@ -13,6 +13,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatFormFieldModule, matFormFieldAnimations} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [],
@@ -30,7 +33,9 @@ import {MatButtonModule} from '@angular/material/button';
   MatTableModule,
   MatDividerModule,
   MatProgressSpinnerModule,
-  MatDialogModule
+  MatDialogModule,
+  MatSnackBarModule,
+  MatFormFieldModule
 ]
 })
 export class MaterialModule { }
